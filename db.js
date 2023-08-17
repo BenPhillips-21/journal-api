@@ -16,13 +16,13 @@ const entrySchema = new mongoose.Schema({
     content: { type: String, required: true }
 })
 
+const EntryModel = mongoose.model('Entry', entrySchema)
+
 const categorySchema = new mongoose.Schema({
     name: { type: String, required: true, unique: true },
     
 })
 
 const CategoryModel = mongoose.model('Category', categorySchema)
-
-const EntryModel = mongoose.model('Entry', entrySchema)
 
 export { EntryModel, CategoryModel, dbClose }
