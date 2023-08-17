@@ -1,4 +1,4 @@
-import app from '/home/ben/projects/js/journal-api/app.js'
+import app from './app.js'
 
 const port = 6969
 app.listen(port)
